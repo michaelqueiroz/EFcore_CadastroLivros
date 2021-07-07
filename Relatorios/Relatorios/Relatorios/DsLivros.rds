@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DsLivros">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=localhost\SQLEXPRESS;Initial Catalog=DbLivros</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>15f85a34-48e1-44d5-b48d-4021ae184d23</DataSourceID>
+</RptDataSource>

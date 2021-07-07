@@ -1,0 +1,27 @@
+﻿@model EFcore_CadastroLivros.Models.Autor
+
+@{
+    ViewData["Title"] = "ExcluirAutor";
+}
+
+<h1>Excluir Autor</h1>
+
+<h3>Deseja deletar este autor?</h3>
+<div>
+    <h4>Autor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+    </dl>
+    
+    <form asp-action="ExcluirAutor">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

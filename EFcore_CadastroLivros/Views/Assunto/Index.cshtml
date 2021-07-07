@@ -1,0 +1,34 @@
+﻿@model IEnumerable<EFcore_CadastroLivros.Models.Assunto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1></h1>
+
+<p>
+    <a asp-action="CriarAssunto">Criar novo assunto</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                <a asp-action="AtualizarAssunto" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="ExcluirAssunto" asp-route-id="@item.Id">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
